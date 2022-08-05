@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>zhenya sergeev</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css" type="text/css">
+</head>
+
+<body>
+  <!-- ================================================wrapper============================================================================================================================================================================================================ -->
+  <div class="wrapper">
+    <div class="page-loader">
+      <div class="spinner"></div>
+    </div>
+    <!-- ================================================header============================================================================================================================================================================================================ -->
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <a href="#" class="header__logo">
+            <img src="images/icon/logo.svg" alt="logo">
+          </a>
+          <div class="header__burger">
+            <div class="menu__mobile">
+              <div class="menu__mobile_button">
+                <span></span>
+              </div>
+            </div>
+
+          </div>
+          <nav class="header__menu" id="menu">
+            <ul class="header__list ">
+              <li class="header__item">
+                <a href="#ex1" lang="en" class="header__link">About</a>
+                <a href="#ex1" lang="ru" class="header__link">Обо мне</a>
+              </li>
+              <li class="header__item">
+                <a href="#ex2" lang="en" class="header__link">Portofolio</a>
+                <a href="#ex2" lang="ru" class="header__link">Портфолио</a>
+              </li>
+              <li class="header__item">
+                <a href="#ex3" lang="en" class="header__link">Contact</a>
+                <a href="#ex3" lang="ru" class="header__link">Контакт</a>
+              </li>
+            </ul>
+            <ul class="langswitcher">
+              <li class="langswitcher__item active">
+                <a class="langswitcher__link" href="#ru" data-lang="ru">Ru</a>
+              </li>
+              <span></span>
+              <li class="langswitcher__item">
+                <a class="langswitcher__link" href="#en" data-lang="en">En</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- ================================================main============================================================================================================================================================================================================ -->
+    <main class="main" id="content">
+      <section class="top" id="ex1">
+        <div class="container">
+          <div class="top__inner">
+            <div class="top__item">
+              <h1 class="top__title">Zhenya Sergeev<span></span></h1>
+              <p class="top__text" lang="ru">
+                Здесь я размещаю свои работы по верстке сайтов.
+                Вы можете с ними подробно ознакомиться, а также связаться со мной.
+              </p>
+              <p class="top__text" lang="en">
+                This is where I post my website development work.
+                You can familiarize yourself with them in detail, as
+                well as contact
+                me.
+              </p>
+              <button class="top__btn color-1" data-modal-target="#modal" lang="ru">Связь со мной</button>
+              <button class="top__btn color-1" data-modal-target="#modal" lang="en">Contact me</button>
+              <div class="modal" id="modal">
+                <div class="modal-header">
+                  <div>СВЯЗАТЬСЯ СО МНОЙ</div>
+                  <button data-close-button class="close-button">&times;</button>
+                </div>
+                <div class="modal-body">
+                  <form class="modal__form">
+                    <input class="modal__input" type="text" id="text" placeholder="Ваше имя:">
+                    <input class="modal__input" type="email" id="email" placeholder="E-mail:">
+                    <input class="modal__input" type="tel" id="tel" placeholder="Ваш телефон:">
+                    <textarea class="modal__textarea" id="projectFF">Ваше сообщение</textarea>
+                    <button class="modal__button" id="submit">Отправить</button>
+                  </form>
+                </div>
+              </div>
+              <div id="overlay"></div>
+            </div>
+            <div class="top__item"></div>
+          </div>
+        </div>
+      </section>
+      <section class="portofolio" id="ex2">
+        <div class="container">
+          <div class="portofolio__box">
+            <h2 class="portofolio__title title" lang="en">My portofolio</h2>
+            <h2 class="portofolio__title title" lang="ru">Мое портфолио</h2>
+            <div class="portofolio__inner">
+              <a href="#" class="portofolio__item">
+                <div class="portofolio__images-box">
+                  <picture>
+                    <source class="portofolio__img" srcset="images/content/image_1.webp" type="image/webp">
+                    <img class="portofolio__img" src="images/content/image_1.jpg" alt="portofolio">
+                  </picture>
+                </div>
+                <div class="portofolio__info">
+                  <h3 class="portofolio__head" lang="en">Creative Digital Agency</h3>
+                  <h3 class="portofolio__head" lang="ru">Креативное цифровое агентство</h3>
+                  <span class="portofolio__span" lang="en">Landing Page</span>
+                  <span class="portofolio__span" lang="ru">Целевая страница</span>
+                </div>
+              </a>
+              <a href="#" class="portofolio__item">
+                <div class="portofolio__images-box">
+                  <picture>
+                    <source class="portofolio__img" srcset="images/content/image_1.webp" type="image/webp">
+                    <img class="portofolio__img" src="images/content/image_1.jpg" alt="portofolio">
+                  </picture>
+                </div>
+                <div class="portofolio__info">
+                  <h3 class="portofolio__head" lang="en">Creative Digital Agency</h3>
+                  <h3 class="portofolio__head" lang="ru">Креативное цифровое агентство</h3>
+                  <span class="portofolio__span" lang="en">Landing Page</span>
+                  <span class="portofolio__span" lang="ru">Целевая страница</span>
+                </div>
+              </a><a href="#" class="portofolio__item">
+                <div class="portofolio__images-box">
+                  <picture>
+                    <source class="portofolio__img" srcset="images/content/image_1.webp" type="image/webp">
+                    <img class="portofolio__img" src="images/content/image_1.jpg" alt="portofolio">
+                  </picture>
+                </div>
+                <div class="portofolio__info">
+                  <h3 class="portofolio__head" lang="en">Creative Digital Agency</h3>
+                  <h3 class="portofolio__head" lang="ru">Креативное цифровое агентство</h3>
+                  <span class="portofolio__span" lang="en">Landing Page</span>
+                  <span class="portofolio__span" lang="ru">Целевая страница</span>
+                </div>
+              </a><a href="#" class="portofolio__item">
+                <div class="portofolio__images-box">
+                  <picture>
+                    <source class="portofolio__img" srcset="images/content/image_1.webp" type="image/webp">
+                    <img class="portofolio__img" src="images/content/image_1.jpg" alt="portofolio">
+                  </picture>
+                </div>
+                <div class="portofolio__info">
+                  <h3 class="portofolio__head" lang="en">Creative Digital Agency</h3>
+                  <h3 class="portofolio__head" lang="ru">Креативное цифровое агентство</h3>
+                  <span class="portofolio__span" lang="en">Landing Page</span>
+                  <span class="portofolio__span" lang="ru">Целевая страница</span>
+                </div>
+              </a><a href="#" class="portofolio__item">
+                <div class="portofolio__images-box">
+                  <picture>
+                    <source class="portofolio__img" srcset="images/content/image_1.webp" type="image/webp">
+                    <img class="portofolio__img" src="images/content/image_1.jpg" alt="portofolio">
+                  </picture>
+                </div>
+                <div class="portofolio__info">
+                  <h3 class="portofolio__head" lang="en">Creative Digital Agency</h3>
+                  <h3 class="portofolio__head" lang="ru">Креативное цифровое агентство</h3>
+                  <span class="portofolio__span" lang="en">Landing Page</span>
+                  <span class="portofolio__span" lang="ru">Целевая страница</span>
+                </div>
+              </a><a href="#" class="portofolio__item">
+                <div class="portofolio__images-box">
+                  <picture>
+                    <source class="portofolio__img" srcset="images/content/image_1.webp" type="image/webp">
+                    <img class="portofolio__img" src="images/content/image_1.jpg" alt="portofolio">
+                  </picture>
+                </div>
+                <div class="portofolio__info">
+                  <h3 class="portofolio__head" lang="en">Creative Digital Agency</h3>
+                  <h3 class="portofolio__head" lang="ru">Креативное цифровое агентство</h3>
+                  <span class="portofolio__span" lang="en">Landing Page</span>
+                  <span class="portofolio__span" lang="ru">Целевая страница</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contact" id="ex3">
+        <div class="container">
+          <div class="contact__inner">
+            <div class="contact__item">
+              <h2 class="contact__title title" lang='en'>Want to make awesome and impactful Product?</h2>
+              <h2 class="contact__title title" lang='ru'>Хотите сделать потрясающий и эффектный продукт?</h2>
+              <!-- <a href="#" class="contact__link">Contact Us</a> -->
+            </div>
+            <div class="contact__item"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- ================================================footer============================================================================================================================================================================================================ -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <h4 class="footer__head" lang="en">Follow me</h4>
+          <h4 class="footer__head" lang="ru">Подписывайтесь на меня</h4>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a href="#" class="footer__link inst"></a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link telega"></a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link gmail"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
